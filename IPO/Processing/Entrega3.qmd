@@ -1,0 +1,84 @@
+---
+title: "Entrega3"
+author: "Diego Meza Avila"
+format: html
+editor: visual
+Bibliography: "Desigualdadsalarialydesigualdadeducacional.bib" 
+link-citations: True  
+---
+
+## El rol de la educación en la Desigualdad Salarial 
+
+La desigualdad es un fenómeno multidimensional que afecta diversos aspectos de la sociedad y compromete significativamente la calidad de vida. En Chile, este problema persiste pese a los esfuerzos por mitigarlo, afectando profundamente tanto a la población como a sus instituciones. Uno de los ámbitos donde la desigualdad se manifiesta con claridad es en el sector educativo, particularmente en la disparidad de oportunidades y resultados entre los distintos tipos de educación superior. 
+
+Este trabajo analiza cómo estas diferencias educativas influyen en la satisfacción salarial de los egresados, explorando específicamente si el tipo de educación superior recibida determinan la percepción de equidad y satisfacción con los ingresos obtenidos de sus empleos, sin considerar ganancias adicionales. Así, se plantea la siguiente pregunta de investigación: ¿Cómo afecta el tipo de la educación superior en Chile al nivel de satisfacción salarial y a la percepción de desigualdad entre los egresados? Para poder entender mejor esta desigualdad mencionada, es importante recordad como la desigualdad afecta al sistema educativo, ya que, para este análisis se considerará como la desproporcionada atención y remuneración, dada a líneas de trabajo o especializaciones que estén alineadas con el interés político- económico del país "debían generar la oferta académica en concordancia con las necesidades humano-técnicas que requerían los proyectos estratégicos puestos en marcha por la Senplades." (\[\@auquicalle2023\]); esto se podría considerar tanto causa como consecuencia de la condición que aplica esto, a la educación del país. Siendo un sistema educativo que, pese a que existan y se ofrezcan diferentes tipos de educación superior, se le asocia la idea de que hay algunos dentro de este grupo que tienen más beneficios económicos que otros, aumentando así la tendencia en que las personas ingresas a estos tipos de educación superior, "América Latina presenta indicadores que hacen de su sistema superior un sistema de acceso de masas. La tabla 2 refleja el incremento en el tiempo y muestra el aumento sostenido de la tasa bruta de matriculación" (\[\@lacontr2023\]). 
+
+El otro aspecto de la desigualdad que afecta a chile y su población es la salarial, aun que al igual que la desigualdad educacional, es una desigualdad que puede considerarse y estudiarse desde diferentes perspectivas, en este trabajo se entenderá la desigualdad salarial como a la situación en la que dos personas pueden trabajar lo mismo, sin embargo, una recibirá más ingresos que la otra, dependiendo del título que lleve cada una, y no por su actividad siendo tal, que en situaciones personas pueden trabajar más que otras, y no llegar a fin de mes para pagar las cuentas "existe discriminación en el mercado de trabajo cuando un grupo de individuos recibe injustificadamente y de manera independiente a sus habilidades, un trato desfavorable que afecta su participación y desarrollo dentro de este mercado." (\[\@delaluztovar2023\]). Si bien pueden ser diferentes las situaciones de cada persona, así como los factores que le afectan (diferentes gastos), en este análisis centraremos la atención en cómo, aunque personas si dediquen tiempo a especializarse en sus estudios, va a depender de tipo de educación superior que reciban los ingresos que reciban "No obstante, otra característica ha sido la persistente desigualdad en la distribución de ingresos" (\[\@iturra2023\]). Para poder entender la relación que hay entre las personas y su satisfacción por los ingresos actuales remunerados, se entenderá el tomar horas extras en el trabajo como la necesidad de generar más ingresos para poder cubrir sus gastos, siendo actuales o futuros. 
+
+Para realizar nuestro análisis sobre cómo el tipo de educación superior influye en la satisfacción con el salario recibido, utilizaremos la base de datos de la Encuesta CASEN 2022. Seleccionaremos como indicadores las preguntas: ¿Con qué frecuencia recibe ingresos por horas extras? y ¿En qué tipo de institución realizó su educación superior?. Interpretaremos la primera pregunta como un indicativo de la necesidad o elección de generar ingresos adicionales, debido a que el salario base no es suficiente para cubrir la calidad de vida deseada por la persona. La segunda pregunta nos permitirá explorar los distintos tipos de educación superior presentes en Chile y su relación con la satisfacción salarial. 
+
+Tal como podemos observar en los datos generados por Rstudio, podemos ver en el grafico numero 1 como existe una concentración importante en las personas que mensualmente trabajan horas extras, lo que se podría interpretar como que la mayoría de las personas observadas en este estudio de CASEN 2022, no les es suficiente su salario actual por lo que tienen que optar por trabajar mas horas extras; esto lo entendemos debido a que la media, mediana y moda se centran en recibir horas extras cada 1 mes, o mensualmente. En cuanto al segundo gráfico podemos ver cómo solo nos entrega información de cómo se distribuyen las personas en estos tipos de educación superior, pero al no haber muchas diferencias no se puede argumentar mucho, hasta que vemos la tabla de contingencia, dada en el objeto graph3 (por temas de continuidad al hacer el código), y en esta tabla podemos ver cómo la insatisfacción por los ingresos salariales actuales afecta a todos los tipos de educación, teniendo todos los mayores ingresos mensuales; incluso comparando con el estado general de la educación no varía el hecho de que las horas extras requieren. Aun así, se podría resaltar que la cantidad de personas en Institutos profesionales y Universidades estatales es mucho mayor a los otros tipos de educación superior, por lo que su grado de incidencia en este tema se podría considerar mucho mayor. 
+
+continuando con este trabajo y para seguir con la entrega 3, se iniciara con la eleccion de preguntas a modo de variables que se integren en un indice el cual se basa en su descripcion de la desigualdad en ingresos de un modo unidimensional el cual se puede ver a continuacion
+
+![](images/WhatsApp Image 2024-05-11 at 18.10.55.jpeg)
+
+Considerando esta tabla se pensara el indice con una distribucion del pesaje con 50% en ingresos y 50% en educacion.
+
+Sin embargo como hemos podido ver a lo largo de este trabajo y en nuestro dia a dia, la educacion es un proceso multidimensional el cual por temas de coherencia con el cuestionario dividiremos en ingresos (50%) tipo de educacion (25%) y hogar en cuanto la educacion (25%)
+
+las variables que se utilizan para entender la insatisfaccion salarial, seran indicadores que expresen la necesidad de generar ingresos extras independientes del trabajo principal, para lo que ocuparemos las preguntas: y3ap. ¿con que frecuencia %nombre% recibe ingresos por horas extras? y3fp. ¿con que frecuencia %nombre% recibe ingresos por otros ingresos? y3cp. ¿con que frecuencia %nombre% recibe ingresos por propinas?
+
+los indicadores para el tipo de eduacion seran las preguntas: e8. ¿En que tipo de institucion realizo %nombre% su educacion superior? e5a. ¿Cual es la principal razon por la cual %nombre% no asiste actualmente a educacion especial, basica, media, superior o de nivelacion de estudios?
+
+y los indicadores para la dimension del hogar en relacion a la educacion moderna son:
+
+v24. la vivienda donde usted vive ¿dispone de energia electrica? y v35b. ¿a menos de 20 cuadras o 2.5 km de un centro educacional (colegio o jardin infantil)
+
+para poder realizar un indice se realizara un correlacion de estas variables en una matriz de correlacion la cual se realizara con el metodo pairwise deletion debido a la importancia que tienen los datos perdidos en algunas de estas preguntas por lo que:
+
+```{r}
+pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven, sjPlot, ggplot2, psych, kableExtra)
+
+rm(list=ls()) 
+
+options(scipen=999)
+
+load(url("https://github.com/justicia-distributiva/merit-edjust/raw/main/input/data-original/casen2022.RData")) 
+
+proc_daca <- casen22 %>% select( ingresoex= y3ap, ingresoex2= y3fp, ingresoex3=y3cp,tipoeduc =e8, educontex= e5a, acceso=v24, acceso2=v35b)
+
+frq(proc_daca)
+
+proc_daca <- proc_daca %>% set_na(., na = c(-99, -88))
+
+frq(proc_daca)
+
+mean(proc_daca$ingresoex);mean(proc_daca$ingresoex2);mean(proc_daca$ingresoex3);mean(proc_daca$tipoeduc);mean(proc_daca$educontex);mean(proc_daca$acceso);mean(proc_daca$acceso2)
+
+mean(proc_daca$ingresoex, na.rm = TRUE);mean(proc_daca$ingresoex2, na.rm = TRUE);mean(proc_daca$ingresoex3, na.rm = TRUE);mean(proc_daca$tipoeduc, na.rm = TRUE);mean(proc_daca$educontex, na.rm = TRUE);mean(proc_daca$acceso, na.rm = TRUE);mean(proc_daca$acceso2, na.rm = TRUE)
+
+Mk <- cor(proc_daca, use = "pairwise.complete.obs")
+Mk
+
+sjPlot::tab_corr(proc_daca, na.deletion = "pairwise", triangle = "lower")
+
+pacman::p_load(corrplot)
+corrplot.mixed(Mk)
+```
+
+![](images/000010.png)
+
+Como podemos ver la correlacion entre estas variables puede parecer debil, sin embargo centraremos la atencion el como se relacionan las variables de educacion con las variables de ingreso, y como podemos ver si bien estas correlaciones puede considerarse debiles, considerando el conjunto de correlaciones y las diferencias que presentan entre ellas podemos llegar a la conclusion de que el tipo de educacion, el contexto de la educacion de la personas y el acceso a la electricidad en su casa influyen con una correlacion negativa a los ingresos, o de forma inversamente proporcional, por lo que podemos concluir que si bien en estos casos no es fuerte el impacto del tipo de educacion (y su calidad), si se puede apreciar que tiene un afecto negativo la carencia o falta de oportunidades en estas areas, lo que sumado a diferentes desigualdades, injusticias, o condiciones que experimenten las personas (considerando otras areas de su vida no solo lo educacional) puede considerarse una contribucion importante a los detalles o granos de arena que contribuyen a una desigualdad salarial que afecta a las personas.
+
+continuando con el indice para poder visualizar esta incidencia entre variables de ingreso y educacion:
+
+```{r}
+pacman::p_load(tidyverse,car,haven, summarytools,sjmisc,psych)
+
+view(dfSummary(proc_daca, headings=FALSE, graph.col = FALSE))
+
+
+```
+
+como resultado de este indice y respetando lo anterior mencioando respecto al pesaje, concluimos que si se encontraba por sobre un 25% el tipo de educacion en las personas si afecta en su insatisfaccion salarial y si es menos del 25% el tipo de eduacion de las personas no afecta en su insatisfaccion salarial

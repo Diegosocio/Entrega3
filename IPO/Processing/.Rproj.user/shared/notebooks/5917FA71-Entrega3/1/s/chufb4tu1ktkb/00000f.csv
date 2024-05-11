@@ -1,0 +1,8 @@
+"0","pacman::p_load(tidyverse,car,haven, summarytools,sjmisc,psych)"
+"0",""
+"0","view(dfSummary(proc_daca, headings=FALSE, graph.col = FALSE))"
+"2","Output file written: C:\Users\Regalo\AppData\Local\Temp\Rtmp06J2XE\file38ac2ce41664.html
+"
+"0","proc_daca = proc_daca %>% rowwise() %>%mutate(""ingresos"" = mean(c(ingresoex, ingresoex2, ingresoex3)),""Tipo de educacion"" = mean(c(tipoeduc, educontex)),""Acceso""= mean(c(acceso, acceso2)),) %>% ungroup()"
+"0",""
+"0",""

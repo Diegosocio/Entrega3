@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Diego Meza Avila">
+
+<title>Entrega3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Entrega3_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Entrega3_files/libs/quarto-html/quarto.js"></script>
+<script src="Entrega3_files/libs/quarto-html/popper.min.js"></script>
+<script src="Entrega3_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Entrega3_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Entrega3_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Entrega3_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Entrega3_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Entrega3_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Entrega3_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Entrega3</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Diego Meza Avila </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="el-rol-de-la-educación-en-la-desigualdad-salarial" class="level2">
+<h2 class="anchored" data-anchor-id="el-rol-de-la-educación-en-la-desigualdad-salarial">El rol de la educación en la Desigualdad Salarial&nbsp;</h2>
+<p>La desigualdad es un fenómeno multidimensional que afecta diversos aspectos de la sociedad y compromete significativamente la calidad de vida. En Chile, este problema persiste pese a los esfuerzos por mitigarlo, afectando profundamente tanto a la población como a sus instituciones. Uno de los ámbitos donde la desigualdad se manifiesta con claridad es en el sector educativo, particularmente en la disparidad de oportunidades y resultados entre los distintos tipos de educación superior.&nbsp;</p>
+<p>Este trabajo analiza cómo estas diferencias educativas influyen en la satisfacción salarial de los egresados, explorando específicamente si el tipo de educación superior recibida determinan la percepción de equidad y satisfacción con los ingresos obtenidos de sus empleos, sin considerar ganancias adicionales. Así, se plantea la siguiente pregunta de investigación: ¿Cómo afecta el tipo de la educación superior en Chile al nivel de satisfacción salarial y a la percepción de desigualdad entre los egresados? Para poder entender mejor esta desigualdad mencionada, es importante recordad como la desigualdad afecta al sistema educativo, ya que, para este análisis se considerará como la desproporcionada atención y remuneración, dada a líneas de trabajo o especializaciones que estén alineadas con el interés político- económico del país “debían generar la oferta académica en concordancia con las necesidades humano-técnicas que requerían los proyectos estratégicos puestos en marcha por la Senplades.” ([@auquicalle2023]); esto se podría considerar tanto causa como consecuencia de la condición que aplica esto, a la educación del país. Siendo un sistema educativo que, pese a que existan y se ofrezcan diferentes tipos de educación superior, se le asocia la idea de que hay algunos dentro de este grupo que tienen más beneficios económicos que otros, aumentando así la tendencia en que las personas ingresas a estos tipos de educación superior, “América Latina presenta indicadores que hacen de su sistema superior un sistema de acceso de masas. La tabla 2 refleja el incremento en el tiempo y muestra el aumento sostenido de la tasa bruta de matriculación” ([@lacontr2023]).&nbsp;</p>
+<p>El otro aspecto de la desigualdad que afecta a chile y su población es la salarial, aun que al igual que la desigualdad educacional, es una desigualdad que puede considerarse y estudiarse desde diferentes perspectivas, en este trabajo se entenderá la desigualdad salarial como a la situación en la que dos personas pueden trabajar lo mismo, sin embargo, una recibirá más ingresos que la otra, dependiendo del título que lleve cada una, y no por su actividad siendo tal, que en situaciones personas pueden trabajar más que otras, y no llegar a fin de mes para pagar las cuentas “existe discriminación en el mercado de trabajo cuando un grupo de individuos recibe injustificadamente y de manera independiente a sus habilidades, un trato desfavorable que afecta su participación y desarrollo dentro de este mercado.” ([@delaluztovar2023]). Si bien pueden ser diferentes las situaciones de cada persona, así como los factores que le afectan (diferentes gastos), en este análisis centraremos la atención en cómo, aunque personas si dediquen tiempo a especializarse en sus estudios, va a depender de tipo de educación superior que reciban los ingresos que reciban “No obstante, otra característica ha sido la persistente desigualdad en la distribución de ingresos” ([@iturra2023]). Para poder entender la relación que hay entre las personas y su satisfacción por los ingresos actuales remunerados, se entenderá el tomar horas extras en el trabajo como la necesidad de generar más ingresos para poder cubrir sus gastos, siendo actuales o futuros.&nbsp;</p>
+<p>Para realizar nuestro análisis sobre cómo el tipo de educación superior influye en la satisfacción con el salario recibido, utilizaremos la base de datos de la Encuesta CASEN 2022. Seleccionaremos como indicadores las preguntas: ¿Con qué frecuencia recibe ingresos por horas extras? y ¿En qué tipo de institución realizó su educación superior?. Interpretaremos la primera pregunta como un indicativo de la necesidad o elección de generar ingresos adicionales, debido a que el salario base no es suficiente para cubrir la calidad de vida deseada por la persona. La segunda pregunta nos permitirá explorar los distintos tipos de educación superior presentes en Chile y su relación con la satisfacción salarial.&nbsp;</p>
+<p>Tal como podemos observar en los datos generados por Rstudio, podemos ver en el grafico numero 1 como existe una concentración importante en las personas que mensualmente trabajan horas extras, lo que se podría interpretar como que la mayoría de las personas observadas en este estudio de CASEN 2022, no les es suficiente su salario actual por lo que tienen que optar por trabajar mas horas extras; esto lo entendemos debido a que la media, mediana y moda se centran en recibir horas extras cada 1 mes, o mensualmente. En cuanto al segundo gráfico podemos ver cómo solo nos entrega información de cómo se distribuyen las personas en estos tipos de educación superior, pero al no haber muchas diferencias no se puede argumentar mucho, hasta que vemos la tabla de contingencia, dada en el objeto graph3 (por temas de continuidad al hacer el código), y en esta tabla podemos ver cómo la insatisfacción por los ingresos salariales actuales afecta a todos los tipos de educación, teniendo todos los mayores ingresos mensuales; incluso comparando con el estado general de la educación no varía el hecho de que las horas extras requieren. Aun así, se podría resaltar que la cantidad de personas en Institutos profesionales y Universidades estatales es mucho mayor a los otros tipos de educación superior, por lo que su grado de incidencia en este tema se podría considerar mucho mayor.&nbsp;</p>
+<p>continuando con este trabajo y para seguir con la entrega 3, se iniciara con la eleccion de preguntas a modo de variables que se integren en un indice el cual se basa en su descripcion de la desigualdad en ingresos de un modo unidimensional el cual se puede ver a continuacion</p>
+<p><img src="images/WhatsApp%20Image%202024-05-11%20at%2018.10.55.jpeg" class="img-fluid"></p>
+<p>Considerando esta tabla se pensara el indice con una distribucion del pesaje con 50% en ingresos y 50% en educacion.</p>
+<p>Sin embargo como hemos podido ver a lo largo de este trabajo y en nuestro dia a dia, la educacion es un proceso multidimensional el cual por temas de coherencia con el cuestionario dividiremos en ingresos (50%) tipo de educacion (25%) y hogar en cuanto la educacion (25%)</p>
+<p>las variables que se utilizan para entender la insatisfaccion salarial, seran indicadores que expresen la necesidad de generar ingresos extras independientes del trabajo principal, para lo que ocuparemos las preguntas: y3ap. ¿con que frecuencia %nombre% recibe ingresos por horas extras? y3fp. ¿con que frecuencia %nombre% recibe ingresos por otros ingresos? y3cp. ¿con que frecuencia %nombre% recibe ingresos por propinas?</p>
+<p>los indicadores para el tipo de eduacion seran las preguntas: e8. ¿En que tipo de institucion realizo %nombre% su educacion superior? e5a. ¿Cual es la principal razon por la cual %nombre% no asiste actualmente a educacion especial, basica, media, superior o de nivelacion de estudios?</p>
+<p>y los indicadores para la dimension del hogar en relacion a la educacion moderna son:</p>
+<p>v24. la vivienda donde usted vive ¿dispone de energia electrica? y v35b. ¿a menos de 20 cuadras o 2.5 km de un centro educacional (colegio o jardin infantil)</p>
+<p>para poder realizar un indice se realizara un correlacion de estas variables en una matriz de correlacion la cual se realizara con el metodo pairwise deletion debido a la importancia que tienen los datos perdidos en algunas de estas preguntas por lo que:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(dplyr, sjmisc, car, sjlabelled, stargazer, haven, sjPlot, ggplot2, psych, kableExtra)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen=</span><span class="dv">999</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="fu">url</span>(<span class="st">"https://github.com/justicia-distributiva/merit-edjust/raw/main/input/data-original/casen2022.RData"</span>)) </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>proc_daca <span class="ot">&lt;-</span> casen22 <span class="sc">%&gt;%</span> <span class="fu">select</span>( <span class="at">ingresoex=</span> y3ap, <span class="at">ingresoex2=</span> y3fp, <span class="at">ingresoex3=</span>y3cp,<span class="at">tipoeduc =</span>e8, <span class="at">educontex=</span> e5a, <span class="at">acceso=</span>v24, <span class="at">acceso2=</span>v35b)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">frq</span>(proc_daca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>y3ap. ¿Con qué frecuencia recibe ingresos por horas extras? (ingresoex) &lt;numeric&gt; 
+# total N=202231 valid N=5582 mean=-4.21 sd=21.97
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+  -99 |                          No responde |     24 |  0.01 |    0.43 |   0.43
+  -88 |                              No sabe |    328 |  0.16 |    5.88 |   6.31
+    1 |                1. Cada mes (mensual) |   3979 |  1.97 |   71.28 |  77.59
+    2 |        2. Cada dos meses (bimestral) |    633 |  0.31 |   11.34 |  88.93
+    3 |      3. Cada tres meses (trimestral) |    319 |  0.16 |    5.71 |  94.64
+    4 | 4. Cada cuatro meses (cuatrimestral) |     88 |  0.04 |    1.58 |  96.22
+    5 |       5. Cada seis meses (semestral) |     90 |  0.04 |    1.61 |  97.83
+    6 |           6. Una vez por año (anual) |    121 |  0.06 |    2.17 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 196649 | 97.24 |    &lt;NA&gt; |   &lt;NA&gt;
+
+y3fp. ¿Con qué frecuencia recibe ingresos por otros ingresos? (ingresoex2) &lt;numeric&gt; 
+# total N=202231 valid N=298 mean=-5.65 sd=25.29
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+  -99 |                          No responde |      2 |  0.00 |    0.67 |   0.67
+  -88 |                              No sabe |     23 |  0.01 |    7.72 |   8.39
+    1 |                1. Cada mes (mensual) |    178 |  0.09 |   59.73 |  68.12
+    2 |        2. Cada dos meses (bimestral) |     12 |  0.01 |    4.03 |  72.15
+    3 |      3. Cada tres meses (trimestral) |     50 |  0.02 |   16.78 |  88.93
+    4 | 4. Cada cuatro meses (cuatrimestral) |      4 |  0.00 |    1.34 |  90.27
+    5 |       5. Cada seis meses (semestral) |      4 |  0.00 |    1.34 |  91.61
+    6 |           6. Una vez por año (anual) |     25 |  0.01 |    8.39 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 201933 | 99.85 |    &lt;NA&gt; |   &lt;NA&gt;
+
+y3cp. ¿Con qué frecuencia recibe ingresos por propinas? (ingresoex3) &lt;numeric&gt; 
+# total N=202231 valid N=928 mean=-3.23 sd=19.21
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+  -99 |                          No responde |      1 |  0.00 |    0.11 |   0.11
+  -88 |                              No sabe |     44 |  0.02 |    4.74 |   4.85
+    1 |                1. Cada mes (mensual) |    834 |  0.41 |   89.87 |  94.72
+    2 |        2. Cada dos meses (bimestral) |     32 |  0.02 |    3.45 |  98.17
+    3 |      3. Cada tres meses (trimestral) |      9 |  0.00 |    0.97 |  99.14
+    4 | 4. Cada cuatro meses (cuatrimestral) |      2 |  0.00 |    0.22 |  99.35
+    5 |       5. Cada seis meses (semestral) |      0 |  0.00 |    0.00 |  99.35
+    6 |           6. Una vez por año (anual) |      6 |  0.00 |    0.65 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 201303 | 99.54 |    &lt;NA&gt; |   &lt;NA&gt;
+
+e8. ¿En qué tipo de institución realizó su educación superior? (tipoeduc) &lt;numeric&gt; 
+# total N=202231 valid N=37369 mean=2.29 sd=10.10
+
+Value |                                                                       Label |      N | Raw % | Valid % | Cum. %
+-----------------------------------------------------------------------------------------------------------------------
+  -99 |                                                                 No responde |     18 |  0.01 |    0.05 |   0.05
+  -88 |                                                                     No sabe |    427 |  0.21 |    1.14 |   1.19
+    1 |                                              1. Centro de Formación Técnica |   4555 |  2.25 |   12.19 |  13.38
+    2 |                                                    2. Instituto Profesional |  10308 |  5.10 |   27.58 |  40.96
+    3 |      3. Universidad privada no perteneciente al Consejo de Rectores (CRUCH) |   4824 |  2.39 |   12.91 |  53.87
+    4 |         4. Universidad privada perteneciente al Consejo de Rectores (CRUCH) |   5730 |  2.83 |   15.33 |  69.21
+    5 |                                                      5. Universidad Estatal |   8766 |  4.33 |   23.46 |  92.67
+    6 | 6. Establecimiento de educación superior de las Fuerzas Armadas y del Orden |    535 |  0.26 |    1.43 |  94.10
+    7 |                                                   7. Universidad Extranjera |   2206 |  1.09 |    5.90 | 100.00
+ &lt;NA&gt; |                                                                        &lt;NA&gt; | 164862 | 81.52 |    &lt;NA&gt; |   &lt;NA&gt;
+
+e5a. ¿Cuál es la principal razón por la cual no asiste actualmente a educación? (educontex) &lt;numeric&gt; 
+# total N=202231 valid N=11695 mean=8.19 sd=10.07
+
+Value |                                                                                                                                 Label |      N | Raw % | Valid % | Cum. %
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -99 |                                                                                                                           No responde |     31 |  0.02 |    0.27 |   0.27
+  -88 |                                                                                                                               No sabe |     75 |  0.04 |    0.64 |   0.91
+    1 |                                                                                            1. Ayuda en la casa o quehaceres del hogar |    299 |  0.15 |    2.56 |   3.46
+    2 |                                                                                            2. Ayuda o se dedica al cuidado de alguien |    244 |  0.12 |    2.09 |   5.55
+    3 |                                                                                                  3. Embarazo, maternidad o paternidad |    513 |  0.25 |    4.39 |   9.94
+    4 |                                                            4. Tiene una discapacidad o requiere establecimiento de educación especial |    114 |  0.06 |    0.97 |  10.91
+    5 |                                                                     5. Tiene una enfermedad o condición de salud que lo(a) inhabilita |    271 |  0.13 |    2.32 |  13.23
+    6 |                                                                                                               6. Problemas familiares |    211 |  0.10 |    1.80 |  15.03
+    7 |                                                                   7. No le interesa o no conoce la manera para completar sus estudios |    318 |  0.16 |    2.72 |  17.75
+    8 |                                                                                                                8. Terminó de estudiar |   4513 |  2.23 |   38.59 |  56.34
+    9 |                                                                                              9. Está asistiendo a un preuniversitario |    245 |  0.12 |    2.09 |  58.44
+   10 | 10. Se encuentra preparando la Prueba de Acceso a la Educación Superior (PAES) o Prueba de Transición (PDT) de Invierno por su cuenta |    250 |  0.12 |    2.14 |  60.57
+   11 |                                                                                                              11. Dificultad económica |    834 |  0.41 |    7.13 |  67.70
+   12 |                                                                                                           12. Trabaja o busca trabajo |   3048 |  1.51 |   26.06 |  93.77
+   13 |                                                                               13. Problemas de rendimiento o cancelación de matrícula |     85 |  0.04 |    0.73 |  94.49
+   14 |                                                                                               14. Dificultad de acceso o movilización |     38 |  0.02 |    0.32 |  94.82
+   15 |                                                                                                          15. Por la pandemia COVID-19 |    118 |  0.06 |    1.01 |  95.83
+   16 |                                                                                                           16. Otra razón. Especifique |    488 |  0.24 |    4.17 | 100.00
+ &lt;NA&gt; |                                                                                                                                  &lt;NA&gt; | 190536 | 94.22 |    &lt;NA&gt; |   &lt;NA&gt;
+
+v24. La vivienda donde usted vive, ¿dispone de energía eléctrica? (acceso) &lt;numeric&gt; 
+# total N=202231 valid N=202231 mean=1.14 sd=0.69
+
+Value |                                                                       Label |      N | Raw % | Valid % | Cum. %
+-----------------------------------------------------------------------------------------------------------------------
+    1 |                                 1. Sí, de la red pública con medidor propio | 187189 | 92.56 |   92.56 |  92.56
+    2 |                             2. Sí, de la red pública con medidor compartido |  10599 |  5.24 |    5.24 |  97.80
+    3 |                                        3. Sí, de la red pública sin medidor |   1976 |  0.98 |    0.98 |  98.78
+    4 |                              4. Sí, de la red pública y un generador propio |    132 |  0.07 |    0.07 |  98.85
+    5 | 5. Sí, de la red pública y un generador comunitario (solar, eólico o fósil) |    193 |  0.10 |    0.10 |  98.94
+    6 |                     6. Sí, solo un generador propio (solar, eólico o fósil) |   1064 |  0.53 |    0.53 |  99.47
+    7 |                7. Sí, solo un generador comunitario (solar, eólico o fósil) |    197 |  0.10 |    0.10 |  99.56
+    8 |                                          8. No dispone de energía eléctrica |    881 |  0.44 |    0.44 | 100.00
+ &lt;NA&gt; |                                                                        &lt;NA&gt; |      0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;
+
+v35b. Vivienda a menos de 20 cuadras o 2,5 Km de un centro educacional (acceso2) &lt;numeric&gt; 
+# total N=202231 valid N=202231 mean=0.88 sd=4.68
+
+Value |   Label |      N | Raw % | Valid % | Cum. %
+---------------------------------------------------
+  -88 | No Sabe |    556 |  0.27 |    0.27 |   0.27
+    1 |   1. Sí | 175593 | 86.83 |   86.83 |  87.10
+    2 |   2. No |  26082 | 12.90 |   12.90 | 100.00
+ &lt;NA&gt; |    &lt;NA&gt; |      0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>proc_daca <span class="ot">&lt;-</span> proc_daca <span class="sc">%&gt;%</span> <span class="fu">set_na</span>(., <span class="at">na =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">99</span>, <span class="sc">-</span><span class="dv">88</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">frq</span>(proc_daca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>y3ap. ¿Con qué frecuencia recibe ingresos por horas extras? (ingresoex) &lt;numeric&gt; 
+# total N=202231 valid N=5230 mean=1.48 sd=1.07
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+    1 |                1. Cada mes (mensual) |   3979 |  1.97 |   76.08 |  76.08
+    2 |        2. Cada dos meses (bimestral) |    633 |  0.31 |   12.10 |  88.18
+    3 |      3. Cada tres meses (trimestral) |    319 |  0.16 |    6.10 |  94.28
+    4 | 4. Cada cuatro meses (cuatrimestral) |     88 |  0.04 |    1.68 |  95.97
+    5 |       5. Cada seis meses (semestral) |     90 |  0.04 |    1.72 |  97.69
+    6 |           6. Una vez por año (anual) |    121 |  0.06 |    2.31 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 197001 | 97.41 |    &lt;NA&gt; |   &lt;NA&gt;
+
+y3fp. ¿Con qué frecuencia recibe ingresos por otros ingresos? (ingresoex2) &lt;numeric&gt; 
+# total N=202231 valid N=273 mean=1.97 sd=1.58
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+    1 |                1. Cada mes (mensual) |    178 |  0.09 |   65.20 |  65.20
+    2 |        2. Cada dos meses (bimestral) |     12 |  0.01 |    4.40 |  69.60
+    3 |      3. Cada tres meses (trimestral) |     50 |  0.02 |   18.32 |  87.91
+    4 | 4. Cada cuatro meses (cuatrimestral) |      4 |  0.00 |    1.47 |  89.38
+    5 |       5. Cada seis meses (semestral) |      4 |  0.00 |    1.47 |  90.84
+    6 |           6. Una vez por año (anual) |     25 |  0.01 |    9.16 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 201958 | 99.87 |    &lt;NA&gt; |   &lt;NA&gt;
+
+y3cp. ¿Con qué frecuencia recibe ingresos por propinas? (ingresoex3) &lt;numeric&gt; 
+# total N=202231 valid N=883 mean=1.10 sd=0.51
+
+Value |                                Label |      N | Raw % | Valid % | Cum. %
+--------------------------------------------------------------------------------
+    1 |                1. Cada mes (mensual) |    834 |  0.41 |   94.45 |  94.45
+    2 |        2. Cada dos meses (bimestral) |     32 |  0.02 |    3.62 |  98.07
+    3 |      3. Cada tres meses (trimestral) |      9 |  0.00 |    1.02 |  99.09
+    4 | 4. Cada cuatro meses (cuatrimestral) |      2 |  0.00 |    0.23 |  99.32
+    5 |       5. Cada seis meses (semestral) |      0 |  0.00 |    0.00 |  99.32
+    6 |           6. Una vez por año (anual) |      6 |  0.00 |    0.68 | 100.00
+ &lt;NA&gt; |                                 &lt;NA&gt; | 201348 | 99.56 |    &lt;NA&gt; |   &lt;NA&gt;
+
+e8. ¿En qué tipo de institución realizó su educación superior? (tipoeduc) &lt;numeric&gt; 
+# total N=202231 valid N=36924 mean=3.39 sd=1.68
+
+Value |                                                                       Label |      N | Raw % | Valid % | Cum. %
+-----------------------------------------------------------------------------------------------------------------------
+    1 |                                              1. Centro de Formación Técnica |   4555 |  2.25 |   12.34 |  12.34
+    2 |                                                    2. Instituto Profesional |  10308 |  5.10 |   27.92 |  40.25
+    3 |      3. Universidad privada no perteneciente al Consejo de Rectores (CRUCH) |   4824 |  2.39 |   13.06 |  53.32
+    4 |         4. Universidad privada perteneciente al Consejo de Rectores (CRUCH) |   5730 |  2.83 |   15.52 |  68.84
+    5 |                                                      5. Universidad Estatal |   8766 |  4.33 |   23.74 |  92.58
+    6 | 6. Establecimiento de educación superior de las Fuerzas Armadas y del Orden |    535 |  0.26 |    1.45 |  94.03
+    7 |                                                   7. Universidad Extranjera |   2206 |  1.09 |    5.97 | 100.00
+ &lt;NA&gt; |                                                                        &lt;NA&gt; | 165307 | 81.74 |    &lt;NA&gt; |   &lt;NA&gt;
+
+e5a. ¿Cuál es la principal razón por la cual no asiste actualmente a educación? (educontex) &lt;numeric&gt; 
+# total N=202231 valid N=11589 mean=9.10 sd=3.30
+
+Value |                                                                                                                                 Label |      N | Raw % | Valid % | Cum. %
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1 |                                                                                            1. Ayuda en la casa o quehaceres del hogar |    299 |  0.15 |    2.58 |   2.58
+    2 |                                                                                            2. Ayuda o se dedica al cuidado de alguien |    244 |  0.12 |    2.11 |   4.69
+    3 |                                                                                                  3. Embarazo, maternidad o paternidad |    513 |  0.25 |    4.43 |   9.11
+    4 |                                                            4. Tiene una discapacidad o requiere establecimiento de educación especial |    114 |  0.06 |    0.98 |  10.10
+    5 |                                                                     5. Tiene una enfermedad o condición de salud que lo(a) inhabilita |    271 |  0.13 |    2.34 |  12.43
+    6 |                                                                                                               6. Problemas familiares |    211 |  0.10 |    1.82 |  14.25
+    7 |                                                                   7. No le interesa o no conoce la manera para completar sus estudios |    318 |  0.16 |    2.74 |  17.00
+    8 |                                                                                                                8. Terminó de estudiar |   4513 |  2.23 |   38.94 |  55.94
+    9 |                                                                                              9. Está asistiendo a un preuniversitario |    245 |  0.12 |    2.11 |  58.06
+   10 | 10. Se encuentra preparando la Prueba de Acceso a la Educación Superior (PAES) o Prueba de Transición (PDT) de Invierno por su cuenta |    250 |  0.12 |    2.16 |  60.21
+   11 |                                                                                                              11. Dificultad económica |    834 |  0.41 |    7.20 |  67.41
+   12 |                                                                                                           12. Trabaja o busca trabajo |   3048 |  1.51 |   26.30 |  93.71
+   13 |                                                                               13. Problemas de rendimiento o cancelación de matrícula |     85 |  0.04 |    0.73 |  94.44
+   14 |                                                                                               14. Dificultad de acceso o movilización |     38 |  0.02 |    0.33 |  94.77
+   15 |                                                                                                          15. Por la pandemia COVID-19 |    118 |  0.06 |    1.02 |  95.79
+   16 |                                                                                                           16. Otra razón. Especifique |    488 |  0.24 |    4.21 | 100.00
+ &lt;NA&gt; |                                                                                                                                  &lt;NA&gt; | 190642 | 94.27 |    &lt;NA&gt; |   &lt;NA&gt;
+
+v24. La vivienda donde usted vive, ¿dispone de energía eléctrica? (acceso) &lt;numeric&gt; 
+# total N=202231 valid N=202231 mean=1.14 sd=0.69
+
+Value |                                                                       Label |      N | Raw % | Valid % | Cum. %
+-----------------------------------------------------------------------------------------------------------------------
+    1 |                                 1. Sí, de la red pública con medidor propio | 187189 | 92.56 |   92.56 |  92.56
+    2 |                             2. Sí, de la red pública con medidor compartido |  10599 |  5.24 |    5.24 |  97.80
+    3 |                                        3. Sí, de la red pública sin medidor |   1976 |  0.98 |    0.98 |  98.78
+    4 |                              4. Sí, de la red pública y un generador propio |    132 |  0.07 |    0.07 |  98.85
+    5 | 5. Sí, de la red pública y un generador comunitario (solar, eólico o fósil) |    193 |  0.10 |    0.10 |  98.94
+    6 |                     6. Sí, solo un generador propio (solar, eólico o fósil) |   1064 |  0.53 |    0.53 |  99.47
+    7 |                7. Sí, solo un generador comunitario (solar, eólico o fósil) |    197 |  0.10 |    0.10 |  99.56
+    8 |                                          8. No dispone de energía eléctrica |    881 |  0.44 |    0.44 | 100.00
+ &lt;NA&gt; |                                                                        &lt;NA&gt; |      0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;
+
+v35b. Vivienda a menos de 20 cuadras o 2,5 Km de un centro educacional (acceso2) &lt;numeric&gt; 
+# total N=202231 valid N=201675 mean=1.13 sd=0.34
+
+Value | Label |      N | Raw % | Valid % | Cum. %
+-------------------------------------------------
+    1 | 1. Sí | 175593 | 86.83 |   87.07 |  87.07
+    2 | 2. No |  26082 | 12.90 |   12.93 | 100.00
+ &lt;NA&gt; |  &lt;NA&gt; |    556 |  0.27 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex2);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex3);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>tipoeduc);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>educontex);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>acceso);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>acceso2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.140374</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>ingresoex3, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>tipoeduc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>educontex, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>acceso, <span class="at">na.rm =</span> <span class="cn">TRUE</span>);<span class="fu">mean</span>(proc_daca<span class="sc">$</span>acceso2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.478011</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.970696</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.097395</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.386551</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9.09509</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.140374</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.129327</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>Mk <span class="ot">&lt;-</span> <span class="fu">cor</span>(proc_daca, <span class="at">use =</span> <span class="st">"pairwise.complete.obs"</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>Mk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              ingresoex  ingresoex2  ingresoex3     tipoeduc    educontex
+ingresoex   1.000000000  0.19992457  0.10608023  0.025388297  0.059736263
+ingresoex2  0.199924571  1.00000000 -0.50000000 -0.204917288 -0.274078831
+ingresoex3  0.106080234 -0.50000000  1.00000000  0.028712846 -0.032570435
+tipoeduc    0.025388297 -0.20491729  0.02871285  1.000000000  0.089627215
+educontex   0.059736263 -0.27407883 -0.03257044  0.089627215  1.000000000
+acceso     -0.022036579  0.01844961  0.09976311 -0.008511965  0.001015098
+acceso2     0.005931103  0.04045920  0.06797834 -0.033037914 -0.010786338
+                 acceso      acceso2
+ingresoex  -0.022036579  0.005931103
+ingresoex2  0.018449615  0.040459197
+ingresoex3  0.099763110  0.067978335
+tipoeduc   -0.008511965 -0.033037914
+educontex   0.001015098 -0.010786338
+acceso      1.000000000  0.174054647
+acceso2     0.174054647  1.000000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sjPlot<span class="sc">::</span><span class="fu">tab_corr</span>(proc_daca, <span class="at">na.deletion =</span> <span class="st">"pairwise"</span>, <span class="at">triangle =</span> <span class="st">"lower"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">&nbsp;</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">y3ap. ¿Con qué frecuencia recibe<br>
+ingresos por horas extras?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">y3fp. ¿Con qué frecuencia recibe<br>
+ingresos por otros ingresos?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">y3cp. ¿Con qué frecuencia recibe<br>
+ingresos por propinas?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">e8. ¿En qué tipo de institución realizó<br>
+su educación superior?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">e5a. ¿Cuál es la principal razón por la<br>
+cual no asiste actualmente a educación?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">v24. La vivienda donde usted vive,<br>
+¿dispone de energía eléctrica?</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">v35b. Vivienda a menos de 20 cuadras o<br>
+2,5 Km de un centro educacional</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">y3ap. ¿Con qué frecuencia recibe<br>
+ingresos por horas extras?</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">y3fp. ¿Con qué frecuencia recibe<br>
+ingresos por otros ingresos?</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.200<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">y3cp. ¿Con qué frecuencia recibe<br>
+ingresos por propinas?</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.106<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.500<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">e8. ¿En qué tipo de institución realizó<br>
+su educación superior?</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.025<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">-0.205<span style="vertical-align:super;font-size:0.8em;">*</span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.029<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">e5a. ¿Cuál es la principal razón por la<br>
+cual no asiste actualmente a educación?</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.060<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.274<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.033<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">0.090<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">v24. La vivienda donde usted vive,<br>
+¿dispone de energía eléctrica?</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.022<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.018<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">0.100<span style="vertical-align:super;font-size:0.8em;">**</span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.009<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.001<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">v35b. Vivienda a menos de 20 cuadras o<br>
+2,5 Km de un centro educacional</td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.006<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">0.040<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">0.068<span style="vertical-align:super;font-size:0.8em;">*</span></td>
+<td style="text-align: center; padding: 0.2cm;">-0.033<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.011<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">0.174<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td colspan="8" style="text-align: right; border-bottom: double black; border-top: 1px solid black; font-style: italic; font-size: 0.9em;">Computed correlation used pearson-method with pairwise-deletion.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(corrplot)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot.mixed</span>(Mk)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Entrega3_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><img src="images/000010.png" class="img-fluid"></p>
+<p>Como podemos ver la correlacion entre estas variables puede parecer debil, sin embargo centraremos la atencion el como se relacionan las variables de educacion con las variables de ingreso, y como podemos ver si bien estas correlaciones puede considerarse debiles, considerando el conjunto de correlaciones y las diferencias que presentan entre ellas podemos llegar a la conclusion de que el tipo de educacion, el contexto de la educacion de la personas y el acceso a la electricidad en su casa influyen con una correlacion negativa a los ingresos, o de forma inversamente proporcional, por lo que podemos concluir que si bien en estos casos no es fuerte el impacto del tipo de educacion (y su calidad), si se puede apreciar que tiene un afecto negativo la carencia o falta de oportunidades en estas areas, lo que sumado a diferentes desigualdades, injusticias, o condiciones que experimenten las personas (considerando otras areas de su vida no solo lo educacional) puede considerarse una contribucion importante a los detalles o granos de arena que contribuyen a una desigualdad salarial que afecta a las personas.</p>
+<p>continuando con el indice para poder visualizar esta incidencia entre variables de ingreso y educacion:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse,car,haven, summarytools,sjmisc,psych)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(<span class="fu">dfSummary</span>(proc_daca, <span class="at">headings=</span><span class="cn">FALSE</span>, <span class="at">graph.col =</span> <span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Switching method to 'browser'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Output file written: C:\Users\Regalo\AppData\Local\Temp\RtmpgFns2D\file4e6c31b71421.html</code></pre>
+</div>
+</div>
+<p>como resultado de este indice y respetando lo anterior mencioando respecto al pesaje, concluimos que si se encontraba por sobre un 25% el tipo de educacion en las personas si afecta en su insatisfaccion salarial y si es menos del 25% el tipo de eduacion de las personas no afecta en su insatisfaccion salarial</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
